@@ -2,7 +2,7 @@
 ## How to use 
 Set your QMainWindow to FramelessResizableWindow
  
- You can give a margin as a parameter
+ You can give the window a margin by setting it as a parameter to Frameless window
 
 Any children you want to add to the window, you should add them to the main_widget member in FramelessResizableWindow
 
@@ -11,9 +11,7 @@ Since stylesheets has nothing todo with layout and sizes you can edit them as yo
 # example
 ```python
     app = QApplication()
-    fr = FramelessResizableWindow(3)
-    #or (5 is the default value)
-    fr = FramelessResizableWindow()
+    fr = FramelessResizableWindow(3)#(5 is the default margin value)
     fr.resize(300,300)
     fr.show()
     sys.exit(app.exec_()) 
